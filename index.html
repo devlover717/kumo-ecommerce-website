@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumo</title>
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <script src="https://kit.fontawesome.com/96d9e792db.js" crossorigin="anonymous"></script>
-    <title>Kumo</title>
+    
 </head>
 
 <body>
@@ -209,13 +212,18 @@
     <section class="client-review-section">
         <div class="container">
             <h3>Client Reviews</h3>
-            <img src="Images/profile-pic.jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt voluptas ab, dolorum iure cum!
+            <img id="rv-profile-img" src="Images/person-1.jpg" alt="">
+            <p id="rv-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nesciunt voluptas ab, dolorum iure cum!
                 Ad,
                 assumenda quae perferendis amet, doloremque soluta sint ducimus expedita beatae repellendus neque,
                 perspiciatis asperiores?</p>
-            <h2>Tina Zuckerberg</h2>
-            <p>CEO of Addle</p>
+            <h2 id="rv-author">Tina Zuckerberg</h2>
+            <p id="rv-job">CEO of Addle</p>
+
+            <div class="review-buttons">
+                <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
         </div>
     </section>
 
@@ -257,6 +265,64 @@
 
 
     </section>
+
+
+
+
+
+
+
+    <!-- questions  -->
+
+    
+    <div class="question-ans-con">
+    <div class="container">
+
+    <h2>General Questions</h2>
+
+    <div class="questions">
+        <div class="question">
+            <div class="qstn-text">
+                <p>Are you located in my Country?</p>
+                <button class="qstn-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="ans">
+                <hr>
+                <p>We are location in 125 countries. <a href="javascript:void(0)">click here</a> to download list of all countries.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="question">
+            <div class="qstn-text">
+                <p>What is the Return Policy?</p>
+                <button class="qstn-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="ans">
+                <hr>
+                <p>Our return policy is very simple. We return all kinds of damaged items att 100% refund.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="question">
+            <div class="qstn-text">
+                <p>What do you do?</p>
+                <button class="qstn-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="ans">
+                <hr>
+                <p>We are an International Clothing brand.</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
 
 
 
@@ -306,7 +372,7 @@
                 <h3>Subscribe</h3>
                 <p>Subscribe to our newsletter</p>
                 <input type="email" name="email" placeholder="Enter Your Email Address">
-                <a href="javascript:void(0)"><button>Subscribe!</button></a>
+                <a href="javascript:void(0)" id="subscribe"><button>Subscribe!</button></a>
             </div>
         </div>
     </section>

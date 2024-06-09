@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
-
+ 
 * {
     margin: 0;
     padding: 0;
@@ -367,6 +367,8 @@ nav a {
 .client-review-section h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5em;
+    text-transform: capitalize;
+
 }
 
 .client-review-section img {
@@ -378,18 +380,34 @@ nav a {
 .client-review-section p{
     margin-bottom: 0.5em;
     color: rgb(150, 149, 149);
+    text-transform: capitalize;
+
 }
 
 .client-review-section h2 {
     font-weight: 400;
     color: rgb(104, 103, 103);
+    text-transform: capitalize;
 
 }
 
+#rv-job {
+    margin-bottom: 1em;
+}
 
+.review-buttons button {
+    border: 1px black solid;
+    background: none;
+    padding: 0.6em 1em;
+    border-radius: 50%;
+    margin: 0.5em;
+}
 
-
-
+.review-buttons button:hover  {
+    background: black;
+    color: white;
+    transition: var(--TRANSITION--);
+}
 
 
 
@@ -442,6 +460,106 @@ nav a {
     color: red;
     transition: var(--TRANSITION--);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* question answer  */
+
+
+
+.ans {
+    display: none;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+
+.show-ans {
+    display: block;
+}
+
+
+.qstn-text {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 400;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.question-ans-con {
+    text-align: center;
+    background: rgb(245, 244, 244);
+    padding: 3em 0;
+    position: relative;
+}
+
+.question-ans-con::after {
+    content : ''; 
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: #979393;
+}
+
+
+.question-ans-con h2 {
+    color: black;
+    margin-bottom: 2em;
+}
+
+
+.question {
+    width: 90%;
+    max-width: 500px;
+    background: white;
+    box-shadow: 0px 0px 10px 0px lightgray;
+    padding: 0.8em;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+.qstn-btn {
+    padding: 0.1em 0.3em;
+    border-radius: 5px;
+    border-color: #c59d5f;
+    color: #c59d5f;
+    outline: none;
+}
+
+hr {
+    margin-bottom: 1em;
+}
+
+
+
+
+
 
 
 
@@ -510,6 +628,11 @@ a {
     gap: 1em;
 }
 
+@media screen and (min-width: 1000px) {
+    .info-con {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
 
 .info-sec input {
     font-size: 1rem;
@@ -536,7 +659,7 @@ a {
 
 .info-sec a, .info-sec p, .info-sec input {
     margin-bottom: 1em;
-
+    font-size: 0.9rem;
 }
 
 
