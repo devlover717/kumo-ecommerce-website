@@ -1,12 +1,20 @@
 //HEADER
-
+ 
 var header = document.querySelector('header'); 
-var headerCon = document.querySelector('.header-content');
+var headerContent = document.querySelector('.header-content');
 
 
 window.addEventListener('scroll', () => {
-    header.classList.toggle('bg-white', this.window.scrollY > 0);
-    headerCon.classList.toggle('width80', this.window.scrollY > 0);
+    const scrollHeight = window.pageYOffset
+    const containerHeight = headerContent.getBoundingClientRect().height
+
+    if (scrollHeight > containerHeight) {
+    header.classList.add('bg-white');
+    headerContent.classList.add('width80');
+    } else {
+        header.classList.remove('bg-white')
+        headerContent.classList.remove('width80')
+    }
 })
 
 
@@ -153,3 +161,11 @@ const subBtn = document.querySelector("#subscribe");
 subBtn.addEventListener('click', () => {
   alert('Thank You for Subscribing to our mail!');
 })
+
+
+
+
+
+// date 
+const date = document.querySelector('#date')
+date.innerHTML = new Date().getFullYear()
