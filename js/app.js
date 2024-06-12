@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     const scrollHeight = window.pageYOffset
     const containerHeight = headerContent.getBoundingClientRect().height
 
-    if (scrollHeight > containerHeight) {
+    if (scrollHeight > 0) {
     header.classList.add('bg-white');
     headerContent.classList.add('width80');
     } else {
